@@ -1,3 +1,18 @@
+##########################################################################################################
+
+## Coursera Getting and Cleaning Data Course Project
+## Rakesh Prusty
+## 2016-05-21
+
+# runAnalysis.R File Description:
+
+# This script will perform the following steps on the UCI HAR Dataset downloaded from 
+# https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+# 1. Merge the training and the test sets to create one data set.
+# 2. Extract only the measurements on the mean and standard deviation for each measurement. 
+# 3. Use descriptive activity names to name the activities in the data set
+# 4. Appropriately label the data set with descriptive activity names. 
+# 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 ##########################################################################################################
 
@@ -24,9 +39,9 @@ names(y_train)        <- "activity_id";
 train_data <- cbind(y_train,subject_train,x_train);
 
 # Read in the test data sets
-subject_test <- read.table('subject_test.txt',header=FALSE); #imports subject_test.txt
-x_test       <- read.table('x_test.txt',header=FALSE); #imports x_test.txt
-y_test       <- read.table('y_test.txt',header=FALSE); #imports y_test.txt
+subject_test <- read.table('subject_test.txt'); #imports subject_test.txt
+x_test       <- read.table('x_test.txt'); #imports x_test.txt
+y_test       <- read.table('y_test.txt'); #imports y_test.txt
 
 # Assign column names to test data sets
 names(subject_test) <- "subject_id";
