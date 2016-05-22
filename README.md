@@ -1,7 +1,7 @@
 # Getting-and-Cleaning-Data-Course-Project-
 Project submission for the Getting and Cleaning Data Course
 
-Rakesh Prusty
+##Rakesh Prusty
 
 Repo for the submission of the course project for the Getting and Cleaning Data course.
 
